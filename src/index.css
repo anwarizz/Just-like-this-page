@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  background: rgb(30,30,30);
+  color: rgb(255, 98, 98);
+}
+
+#root{
+  padding: 0;
+}
