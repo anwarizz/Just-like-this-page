@@ -7,7 +7,6 @@ import { auth, database } from "./firebase/config";
 import {
   signInWithEmailAndPassword,
   onAuthStateChanged,
-  signOut,
 } from "firebase/auth";
 import { onValue, ref, set } from "firebase/database";
 
@@ -60,7 +59,7 @@ function App() {
   return (
     <BrowserRouter>
       {count > 0 ? (
-        <div data-aos="fade" duration="500" className="h-[100vh]">
+        <div data-aos="fade" data-aos-duration="800" className="h-[100vh]">
           <div
             className={`${
               alreadyLikePopUp ? "top-[0px]" : "top-[-70px]"
